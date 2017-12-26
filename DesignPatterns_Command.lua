@@ -43,3 +43,17 @@ print("unit2 x,y:"..unit2.x..","..unit2.y)
 command.undo()
 print("movecommand undo oneuinit x,y:"..oneuinit.x..","..oneuinit.y)
 
+
+
+local t={3,4,6,2,3,7,8,9,1}
+table.sort( t, function ( a,b )
+	print(a,b)
+	return a >b
+end )
+
+print("===================")
+for i,v in ipairs(t) do
+	print(i,v)
+end
+
+print(math.floor(30001/10000))
